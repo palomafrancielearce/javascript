@@ -1,33 +1,24 @@
-//trabalhando com datas
-var d = new Date();
-alert(d);
-//mostra o dia da semana, a data e a hora e o fuso horário utilizado
-alert(d.getMonth()+1);
-//traz o mês, sempre adicionamos 1 para trazer o correto
-alert(d.getMinutes());
-//traz o minutp
-alert(d.getDay());
-//traz o dia
-
-
-var count=0;
-while(count < 5){
-    console.log(count);
-    count++;
+function soma(n1, n2){
+    return n1+ n2;
 }
 
-for(var x=0; x<5; x++){
-    alert(x);
+function validaIdade(idade)
+{
+    var validar;
+    if(idade > 18){
+        validar=true;
+    } else {
+        validar=false;
+    }
+    return validar;
 }
 
+var idade = prompt("Qual sua idade?");
+console.log(validarIdade(idade));
 
-
-
-var idade = prompt("Qual a sua idade?");
-//abre uma caixa de pergunta para o usuário
-
-if(idade >= 18){
-    alert("Maior de idade");
-} else {
-    alert("Menor de idade");
+function setReplace(frase, valor, novoValor){
+    return frase.replace(valor, novoValor);
 }
+
+alert(soma(5,10));
+alert(setReplace("Vai Japão", "Japão", "Brasil"));
