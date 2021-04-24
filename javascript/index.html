@@ -5,7 +5,19 @@
         <title>Página</title>
         <script type="text/javascript" src="js/main.js"></script>
     </head>
-    <body>
-        <button type="button">Clique aqui</button>
+    <body onload="load">
+        <button type="button" onclick="botao()">Clique aqui</button>
+        <h3 id="btnAgradecimento"></h3>
+        <button type="button" onclick="direcionar()">Ir para o Google</button>
+        <p id="mouseMove" onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui</p>
+        <!-- onmousehover é um evento que chama uma função quando passarmos o mouse em cima-->
+        <!--on mouse out vai chamar a funcao quando eu sair de cima do botao-->
+
+        <select onchange="change(this)">
+            <!--onchange vai chamar a funcao sempre quando trocarmos o valor do select-->
+            <option value="1">Valor 1</option>
+            <option value="2">Valor 2</option>
+            <option value="3">Valor 3</option>
+        </select>
     </body>
 </html>
