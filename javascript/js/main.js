@@ -1,21 +1,33 @@
-var lista = ["maçã", "pera", "laranja"];
+//trabalhando com datas
+var d = new Date();
+alert(d);
+//mostra o dia da semana, a data e a hora e o fuso horário utilizado
+alert(d.getMonth()+1);
+//traz o mês, sempre adicionamos 1 para trazer o correto
+alert(d.getMinutes());
+//traz o minutp
+alert(d.getDay());
+//traz o dia
 
-lista.push("uva");
-//adicionando mais uma posição no array criado anteriormente, adiciona na ultima posição
 
-lista.pop();
-//remove a ultima posição do array
+var count=0;
+while(count < 5){
+    console.log(count);
+    count++;
+}
 
-console.log(lista);
+for(var x=0; x<5; x++){
+    alert(x);
+}
 
-console.log(lista.length);
-//mostra o tamanho de elementos do array
 
-console.log(lista.reverse);
-//mostra da ultima posição para a primeira, ao contrário
 
-console.log(lista.toString);
-//converte tudo para string, não mostra como array mas sim como string
-//se colocarmos lista.toString()[0] vai retornar a primeira letra da primeira palavra, no caso a letra m
 
-console.log(lista.join("-"));
+var idade = prompt("Qual a sua idade?");
+//abre uma caixa de pergunta para o usuário
+
+if(idade >= 18){
+    alert("Maior de idade");
+} else {
+    alert("Menor de idade");
+}
